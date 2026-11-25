@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Tasks | To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <p class="welcome">STAY ORGANIZED</p>
+            <h1>My To-Do List <span>✓</span></h1>
+            <p class="subtitle">Plan your day, one task at a time.</p>
+        </header>
+
+        <section class="task-section">
+
+            <form id="task-form" class="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What do you need to do?"
+                    autocomplete="off"
+                    aria-label="Enter a new task"
+                    required
+                >
+
+                <button type="submit" id="add-button">
+                    + Add Task
+                </button>
+            </form>
+
+            <div class="task-info">
+                <h2>Your Tasks</h2>
+                <p id="task-count">0 tasks remaining</p>
+            </div>
+
+            <ul id="task-list" class="task-list">
+            </ul>
+
+            <p id="empty-message" class="empty-message">
+                No tasks yet. Add your first task!
+            </p>
+
+            <button type="button" id="clear-completed"
+                    class="clear-button">
+                Clear Completed Tasks
+            </button>
+
+        </section>
+
+        <footer>
+            <p>Stay focused. Keep moving forward.</p>
+            <p>Made with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
